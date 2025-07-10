@@ -1,0 +1,8 @@
+ Q;What is a REST API? 
+ANS:REST API stands for Representational State Transfer Application Programming Interface. 
+It is a web service architecture where a client (like a browser or Postman) communicates with a server using HTTP methods to send or retrieve data. 
+
+Difference between GET and POST 
+GET: The GET method is used to retrieve data from the server. It sends the data through the URL itself, which means the data is visible in the browser or Postman URL bar. GET is mainly used when you want to fetch or display information, such as getting a list of students from /students. It is considered safe and can be used multiple times without affecting the server's data (this is called "idempotent"). 
+
+POST: On the other hand, the POST method is used to send data to the server. This data is included in the request body, not the URL, so it's more secure. POST is used when you want to add, update, or submit something new to the server, such as adding a new student using /add-student. Unlike GET, POST may create or change server data and is not idempotent — repeating the same request can create multiple entries.
